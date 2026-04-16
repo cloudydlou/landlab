@@ -185,7 +185,7 @@ class LinearDiffuser(Component):
             # Allow non-raster grids only for simple method with node-based diffusivity
             if method != "simple":
                 raise TypeError(
-            "Diffusion component only supports non-Raster grids with method='simple'."
+                    "Diffusion component only supports non-Raster grids with method='simple'."
                 )
 
         self._bc_set_code = self._grid.bc_set_code
