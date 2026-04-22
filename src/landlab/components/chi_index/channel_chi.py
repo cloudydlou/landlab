@@ -3,11 +3,12 @@
 @author: dejh
 """
 
+import warnings
+
 import numpy as np
 
 from landlab import Component
 from landlab import RasterModelGrid
-import warnings
 
 try:
     from itertools import izip
