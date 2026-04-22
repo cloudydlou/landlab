@@ -139,8 +139,8 @@ class ListricKinematicExtender(Component):
 
         Parameters
         ----------
-        grid: RasterModelGrid
-            A landlab grid.
+        grid : RasterModelGrid or HexModelGrid
+            A landlab raster or hex grid.
         extension_rate_x: float, optional
             Rate of x-directed horizontal motion of hangingwall relative to footwall
             (m / y), default 0.001 m/y.
