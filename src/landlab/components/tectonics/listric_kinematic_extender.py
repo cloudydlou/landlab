@@ -163,7 +163,7 @@ class ListricKinematicExtender(Component):
             by calculating upwind links only once.
         """
         if not (isinstance(grid, RasterModelGrid) or isinstance(grid, HexModelGrid)):
-            raise (TypeError, "grid must be a RasterModelGrid or HexModelGrid")
+            raise TypeError("grid must be a RasterModelGrid or HexModelGrid")
 
         fields_to_advect = [] if fields_to_advect is None else fields_to_advect
 
