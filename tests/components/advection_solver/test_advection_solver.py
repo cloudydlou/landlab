@@ -255,6 +255,7 @@ def test_step_function_with_single_named_quantity():
     # verify that field "flux_of_one_advected__quantity" has been created
     assert len(grid.at_link["flux_of_one_advected__quantity"]) == grid.number_of_links
 
+
 def test_step_function_with_no_quantity_named_hex():
     grid = HexModelGrid((3, 4), orientation="horizontal")
     u = grid.add_zeros("advection__velocity", at="link")
@@ -271,6 +272,7 @@ def test_step_function_with_no_quantity_named_hex():
 
     # verify that "advection__flux" field has been created
     assert len(grid.at_link["advection__flux"]) == grid.number_of_links
+
 
 def test_step_function_with_single_named_quantity_hex():
     grid = HexModelGrid((3, 4), orientation="horizontal")
@@ -293,6 +295,7 @@ def test_step_function_with_single_named_quantity_hex():
 
     # verify that field "flux_of_one_advected__quantity" has been created
     assert len(grid.at_link["flux_of_one_advected__quantity"]) == grid.number_of_links
+
 
 def test_with_two_advected_fields():
     grid = RasterModelGrid((3, 7))
